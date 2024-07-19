@@ -1,5 +1,6 @@
 "use strict";
 class ControleDeAudio {
+    volume;
     constructor() {
         this.volume = 2; // Inicializando o volume com o valor 2
     }

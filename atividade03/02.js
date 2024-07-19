@@ -1,13 +1,10 @@
-function ehPrimo(numero) {
-    if (numero <= 1) {
+"use strict";
+function par(numero) {
+    if (numero % 2 === 0) {
+        return true;
+    }
+    else {
         return false;
     }
-    for (var i = 2; i < numero; i++) {
-        if (numero % i === 0)
-            return false;
-    }
-    return true;
 }
-var numero = 17;
-var resultado = ehPrimo(numero);
-console.log("O numero ".concat(numero, " , \u00E9 primo? ").concat(resultado));
+console.log(par(4));
