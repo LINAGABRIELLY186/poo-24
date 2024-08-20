@@ -1,6 +1,7 @@
+"use strict";
 function numerosSeparados(numeros) {
-    var resultado = "";
-    numeros.forEach(function (numero, index) {
+    let resultado = "";
+    numeros.forEach((numero, index) => {
         resultado += numero;
         if (index !== numeros.length - 1) {
             resultado += "-";
@@ -8,6 +9,6 @@ function numerosSeparados(numeros) {
     });
     return resultado;
 }
-var arrayNumeros = [1, 2, 3, 4];
-var numeros = numerosSeparados(arrayNumeros);
+const arrayNumeros = [1, 2, 3, 4];
+const numeros = numerosSeparados(arrayNumeros);
 console.log(numeros);

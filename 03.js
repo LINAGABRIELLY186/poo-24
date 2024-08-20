@@ -1,5 +1,5 @@
-function saudacao(nome, pronomeTratamento) {
-    if (pronomeTratamento === void 0) { pronomeTratamento = "Sr."; }
-    console.log(" ".concat(pronomeTratamento, " ").concat(nome));
+"use strict";
+function saudacao(nome, pronomeTratamento = "Sr.") {
+    console.log(` ${pronomeTratamento} ${nome}`);
 }
 saudacao("lina");
